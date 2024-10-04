@@ -75,7 +75,7 @@ exports.login = catchAsync(async (req, res, next) => {
   //2]check if user exists && password is correct
   //since password is hidden by using select in model, we should add + here
   const user = await User.findOne({ email }).select('+password'); //{email:email}  field and variable
-  console.log(user);
+  //console.log(user);
   // const correct = await user.correctPassword(password, user.password);
 
   if (!user || !(await user.correctPassword(password, user.password))) {

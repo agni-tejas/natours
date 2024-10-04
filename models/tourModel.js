@@ -184,12 +184,12 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 
-tourSchema.post(/^find/, function (docs, next) {
-  console.log(`query took ${Date.now() - this.start} milliseconds`);
-  // console.log(docs);
+// tourSchema.post(/^find/, function (docs, next) {
+//   console.log(`query took ${Date.now() - this.start} milliseconds`);
+//   // console.log(docs);
 
-  next();
-});
+//   next();
+// });
 
 //AGGREGATION MIDDLEWARE
 //commented coz this came before geonear stage

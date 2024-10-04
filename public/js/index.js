@@ -40,7 +40,7 @@ if (userDataForm)
     form.append('email', document.getElementById('email').value);
     //files are array..so select 1st one
     form.append('photo', document.getElementById('photo').files[0]);
-    console.log(form);
+    // console.log(form);
 
     updateSettings(form, 'data');
   });

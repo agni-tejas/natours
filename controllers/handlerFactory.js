@@ -79,7 +79,7 @@ exports.getAll = (Model) =>
       .sort()
       .limitFields()
       .paginate();
-    console.log(features);
+    //console.log(features);
     const doc = await features.query;
     // const doc = await features.query.explain();//this gives how many docs have been scanned to get the result
 

@@ -34,6 +34,7 @@ const sendErrorDev = (err, req, res) => {
     });
   }
   //renders a error page template
+  console.error('ERROR 💥', err);
   return res.status(err.statusCode).render('error', {
     title: 'Something went wrong',
     msg: err.message,
